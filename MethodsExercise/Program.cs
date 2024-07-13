@@ -1,13 +1,33 @@
-﻿namespace MethodsExercise
+﻿
+
+using System.Reflection.Metadata.Ecma335;
+
+namespace MethodsExercise
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            MadLib();
 
-            
+            //MadLib();
+
+            int added = Add(5, 5);
+            Console.WriteLine(added);
+
+            int Subtracted = Subtract(20, 15);
+            Console.WriteLine(Subtracted);
+
+            int multiplied = Multiply(20, 15);
+            Console.WriteLine(multiplied);
+
+            int divided = Divide(20, 15);
+            Console.WriteLine(divided);
+
+           
+
         }
+
+
 
         public static void MadLib()
         {
@@ -23,6 +43,37 @@
 
         }
 
+        public static int Add(int numOne, int numTwo)
+        {
+            return numOne + numTwo;
+        }
+
+        public static int Subtract(int numOne, int numTwo)
+        {
+            return numOne - numTwo;
+        }
+
+        public static int Multiply(int numOne, int numTwo)
+        {
+            return numOne * numTwo;
+        }
+
+        public static int Divide(int numOne, int numTwo)
+        {
+            return numOne / numTwo;
+        }
+
         
+            
+
+
+
+
+
+
+
+
     }
+
+    
 }
